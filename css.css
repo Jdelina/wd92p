@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style> 
+    * {
+        box-sizing: border-box;
+    }
+
+    .header {
+        background-color: rgb(88, 16, 156);
+        color: azure;
+        padding: 15px;
+    }
+
+    .row::after {
+        content: "";
+        clear:both;
+        display: block;
+    }
+
+
+    
+    @media only screen and (max-width: 767px) {
+        [class*="col-"]{
+            width: 100%;
+        }
+    } 
+    
+    
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1> Bootcamp WD92P ZETORO</h1> 
+    </div>
+
+    <div class="row">
+        <div class="menu">
+            <ul> 
+                <li> SAMPLE CONTENT</li>
+                <li> SAMPLE CONTENT</li>
+                <li> SAMPLE CONTENT</li>
+                <li> SAMPLE CONTENT</li>
+            </ul>
+        </div>
+    </div>
+    
+</body>
+</html>

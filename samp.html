@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style> 
+        * {
+          box-sizing: border-box;
+        }
+
+        .header {
+          background-color: #9933cc;
+          color: #ffffff;
+          padding: 15px;
+        }
+/* Insert some text after the content of each <p> element: */
+        .row::after {
+          content: "";
+          clear: both;
+          display: block;
+        }
+
+/* Lahat ng gagamitan ng col magtetake effect to */
+        [class*="col-"] {
+          float: right;
+          padding: 15px;
+        }
+
+/* For List Properties */
+
+        .menu ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+        }
+        
+        .menu li {
+          padding: 8px;
+          margin-bottom: 7px;
+          background-color: #33b5e5;
+          color: #ffffff;
+          box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        }
+
+        .menu li:hover {
+          background-color: #0099cc;
+        }
+
+        /* FOR BOX CONTENT */
+        .aside {
+          background-color: #33b5e5;
+          padding: 15px;
+          color: #ffffff;
+          text-align: center;
+          font-size: 14px;
+          box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        }
+
+        /* For Footer properties*/
+
+        .footer {
+          background-color: #9933cc;
+          color: #ffffff;
+          text-align: center;
+          font-size: 12px;
+          padding: 15px;
+        }
+        
+        /* For desktop: */
+        .col-1 {width: 100%;}
+        .col-2 {width: 50%;}
+        .col-3 {width: 50%;}
+        .col-4 {width: 33.33%;}
+        .col-5 {width: 41.66%;}
+        .col-6 {width: 50%;}
+        .col-7 {width: 58.33%;}
+        .col-8 {width: 66.66%;}
+        .col-9 {width: 75%;}
+        .col-10 {width: 83.33%;}
+        .col-11 {width: 91.66%;}
+        .col-12 {width: 100%;}
+        
+
+
+
+
+@media only screen and (max-width: 768px) {
+          /* For mobile phones: */
+          [class*="col-"] {
+            width: 100%;
+          }
+        }
+</style>
+
+</head>
+<body>
+    <div class="header">
+        <h1>BOOTCAMP WD92P</h1>
+      </div>
+
+      <div class="row">
+        <div class="col-1 menu">
+          <ul>
+          <li>Sample Content1</li>
+          <li>Sample Content2</li>
+          <li>Sample Content3</li>
+          <li>Sample Content4</li>
+          </ul>
+        </div>
+     <div class="col-2">
+            <h1>Sample Title</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis corporis tempore at iste, architecto natus ipsam quos veniam doloribus amet, aspernatur veritatis, consectetur dolore autem. Expedita reiciendis beatae iste nobis.</p>
+          </div>
+
+          <div class="col-3">
+            <div class="aside">
+              <h2>SAMPLE?</h2>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis, numquam.</p>
+              <h2>SAMPLE2?</h2>
+              <p>Lorem ipsum dolor sit.</p>
+              <h2>SAMPLE3</h2>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+        </div>
+
+    <div class="footer">
+            <p>Resize the browser window to see how the content respond to the resizing.</p>
+    </div>
+</body>
+</html>

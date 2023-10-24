@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+</head>
+<body style="height: 3000px;">
+    <input type="button" value="This is a button!!!!"> <br>
+    <input type="checkbox" value="Male">
+    <label for="checkbox"> Male </label>
+    <br>
+    <input type="checkbox" value="Female">
+    <label for="checkbox"> Female </label>
+
+    <input type="file"> <br>
+
+    <input type="image" src="click.png" width="50" height="50">
+    <br>
+    <label for="text"> FirstName</label>
+    <br>
+    <input type="text">
+    <br>
+    <label for="text"> LastName</label>
+    <br>
+    <input type="text">
+    <br>
+    <label for="password"> Password</label> <br>
+    <input type="password">
+    <br>
+    <BR>
+    
+
+    <form>
+        <fieldset>
+            <legend>Login Form </legend> 
+            <label for="Username"> Username: </label>
+            <input type="username" name="user" placeholder="username" required>
+            <br>
+            <label for="Email">Email: </label>
+            <input type="email" name="email" placeholder="Email" required>
+            <br>
+            <label for="password"> Password: </label>
+            <input type="password" name="pass" placeholder="Password"required>
+            <br>
+            <input type="radio" name="gender" required> Female
+            <br>
+            <input type="radio" name="gender" required> Male
+            <br>
+            <input type="submit" onclick="alert ('Welcome')">
+            <button onclick="window.location.href='index.html';"> Cancel </button>
+            <input type="reset" name="res">
+        </fieldset> 
+    </form>
+
+    <br> 
+
+    <label for="birthday"> Birthday</label>
+    <input type="date" name="birthday">
+    <br>
+
+    <label for="date and time"> Date and Time</label>
+    <input type="datetime-local" name="Time">
+
+    <br>
+
+    <label for="search">Search</label>
+    <input type="search" name="search">
+
+    <br>
+    <label for="select">Select City</label>
+    <select name="city"> 
+        <option>...</option>
+        <option>Valenzuela</option>
+        <option>Caloocan</option>
+        <option>Malabon</option>
+    </select>
+
+    <br> 
+    <br>
+
+    <label for="browsers"> Choose your browser </label>
+    <input list="browsers" name="browser" id="br">
+    <datalist id="browsers">
+         <option value="Edge"> 
+         <option value="Chrome">
+        <option value="Firefox">
+    </datalist>
+
+    <br> 
+    <br>
+
+    <label for="textarea"> Comment </label>
+    <textarea name="message" rows="100" cols="100" placeholder="mess"> </textarea>
+
+    <br> 
+<br>
+
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function validateForm() {
+  let x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+</script>
+</head>
+<body>
+
+<h2>JavaScript Validation</h2>
+
+<form name="myForm" action="index.html" onsubmit="return validateForm()" method="post">
+  Name: <input type="text" name="fname">
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
+
+
+
+
+
+
+    
+</body>
+</html>
